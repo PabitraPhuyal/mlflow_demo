@@ -10,7 +10,7 @@ pipeline {
 
         stage('Train Model + MLflow Logging') {
             steps {
-                sh 'python SRC/train.py'
+                sh 'python src/train.py'
             }
         }
 
