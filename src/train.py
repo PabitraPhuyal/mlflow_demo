@@ -23,7 +23,7 @@ with mlflow.start_run():
     mlflow.log_metric("intercept", float(model.intercept_))
 
     # Save model for Docker
-    joblib.dump(model, "model.pkl")
+    joblib.dump(model, "model.pkl")#model = joblib.load("model.pkl")
 
     # Log model to MLflow
     log_model(model, "model")
